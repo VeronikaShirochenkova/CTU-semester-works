@@ -1,0 +1,10 @@
+﻿  Main.cpp
+D:\final\PGR_project\Mesh.h(67,1): warning C4267: аргумент: преобразование из "size_t" в "GLsizei"; возможна потеря данных
+D:\final\PGR_project\Main.cpp(356,36): warning C4018: >: несоответствие типов со знаком и без знака
+LINK : warning LNK4098: библиотека по умолчанию "MSVCRTD" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+  Создание кода
+  0 of 959 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  PGR_project.vcxproj -> D:\final\PGR_project\x64\Release\PGR_project.exe

@@ -1,0 +1,15 @@
+# Blender MTL File: 'room(window).blend'
+# Material Count: 1
+
+newmtl walls
+Ns 7.785471
+Ka 1.000000 1.000000 1.000000
+Kd 0.010580 0.009664 0.011535
+Ks 0.372549 0.372549 0.372549
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 0.100000 NormalMap5.png
+map_Kd ColorMap5.png
+map_Ks RoughMap5.png

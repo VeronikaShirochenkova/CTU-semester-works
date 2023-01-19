@@ -4,4 +4,4 @@
 
 **PJV** - 2D RPG game using Java as a part of a course „*Java programming*“;
 
-**SEMPROJ** - Independent work on a problem-project under the guidance of a supervisor;
+**SEMPROJ** - individua work on a problem-project under the guidance of a supervisor;

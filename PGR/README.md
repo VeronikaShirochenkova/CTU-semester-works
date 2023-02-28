@@ -1,7 +1,10 @@
+![screenshot1](https://user-images.githubusercontent.com/86922246/221914922-8e76c98b-46aa-4536-8837-677eb937bf60.png)
+
+
 # Witch Room
 
-An interactive 3D scene using C++ and the OpenGL library as a semester work of a 
-course **„Computer graphics programming“** in CTU.
+An interactive 3D scene using **C++** and the **OpenGL** library as a semester work of a 
+course *„Computer graphics programming“* in CTU.
 
 ## Description
 
@@ -54,3 +57,21 @@ Animation:
     - Main pot - change the color of the potion
     - Candles - turn on/off light
     - Magic Balls - turn on/off ball animation
+
+
+## Other
+
+The directory *"/code/src"* contains the source code. 
+
+The directory *"/code/windows"* contains compiled version of the project.
+
+The directory *"/img"* contains screenshots.
+
+
+## Links
+
+You can see the models used in this project on my **Artstation** at the link: https://www.artstation.com/starter_pack
+
+
+![thumb2](https://user-images.githubusercontent.com/86922246/221915288-e80c3952-17c6-4341-9656-d888b1d0166b.png)
+

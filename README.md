@@ -1,5 +1,7 @@
 # CTU-semester-works
 
+**IUR** - WPF application "Game launcher" using XAML/C#;
+
 **MVR** - VR game „*Virtual Kitchen*“ on the Unity engine using C#;
 
 **PGR** - an interactive 3D scene using C++ and the OpenGL library as a part of a course 

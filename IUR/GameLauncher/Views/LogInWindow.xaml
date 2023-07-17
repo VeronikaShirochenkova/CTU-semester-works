@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="GameLauncher.Views.LogInWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
+             xmlns:local="clr-namespace:GameLauncher"
+             xmlns:validationRules="clr-namespace:GameLauncher.ValidationRules"
+             
+             Height="400" Width="400"
+             mc:Ignorable="d" 
+             >
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/LoginStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <!--BACKGROUND-->
+        <Border Background="#e6ecff"/>
+        <Border Background="#302c2e" Height="200" Margin="0,-200,0,0"/>
+
+        <!--IMAGE GIF-->
+        <Image gif:ImageBehavior.AnimatedSource="/Images/gamepad.gif" Margin="0,0,0,200" />
+
+
+        <!--LOGIN AND PASSWORD BOXES-->
+        <TextBox Name="LoginBox" 
+                 Text="{Binding Login}" 
+                 Style="{StaticResource loginBoxStyle}" 
+                 Margin="100,225,100,135"
+                 />
+
+        <TextBox Name="PasswordBox"     
+                 Style="{StaticResource passwordBoxStyle}"
+                 FontFamily="/Fonts/quadfont.ttf #QuadFont"
+                 FontSize="8"
+                 Margin="100,280,100,80">
+            <TextBox.Text>
+                <Binding Path="Password" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules >
+                        <validationRules:SearchValidationRule ValidatesOnTargetUpdated="True"/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+
+        <!--LOGIN BUTTON-->
+        <Button Name="LoginButton" 
+                Content="Log In" 
+                Command="{Binding CheckCommand}"
+                Style="{StaticResource loginButtonStyle}" 
+                Margin="100,340,100,20"/>
+
+        <!--CLOSE AND MINIMIZE BUTTON-->
+        <Button x:Name="closeButton"
+                Background="Transparent"
+                BorderThickness="0"
+                Command="{Binding CloseCommand}" 
+                Margin="378,0,0,378" 
+                >
+            <Rectangle Fill="#FA6161"
+                       Height="20"
+                       Width="20"
+                       Cursor="Hand"/>
+        </Button>
+
+        <Button x:Name="minimizeButton"
+                Background="Transparent"
+                BorderThickness="0"
+                Command="{Binding MinimizeCommand}" 
+                Margin="357,0,21,378" 
+                >
+            <Rectangle Fill="#CFE1FA"
+                       Height="20"
+                       Width="20"
+                       Cursor="Hand"/>
+        </Button>
+
+    </Grid>
+</UserControl>

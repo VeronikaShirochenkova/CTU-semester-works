@@ -1,0 +1,172 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Fonts\redensek\**" />
+    <EmbeddedResource Remove="Fonts\redensek\**" />
+    <None Remove="Fonts\redensek\**" />
+    <Page Remove="Fonts\redensek\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Password Dots Regular.ttf" />
+    <None Remove="Fonts\quadfont.ttf" />
+    <None Remove="Fonts\winComProm.ttf" />
+    <None Remove="Fonts\zx-spectrum.ttf" />
+    <None Remove="Images\Avatars\DiVa.png" />
+    <None Remove="Images\Avatars\Girl1.png" />
+    <None Remove="Images\Avatars\Girl2.png" />
+    <None Remove="Images\Avatars\HendryRoesly.png" />
+    <None Remove="Images\Avatars\NierAutomata.png" />
+    <None Remove="Images\balanceBox.png" />
+    <None Remove="Images\closeButton.png" />
+    <None Remove="Images\coin.png" />
+    <None Remove="Images\edit button1.png" />
+    <None Remove="Images\edit button2.png" />
+    <None Remove="Images\editButton1.png" />
+    <None Remove="Images\editButton2.png" />
+    <None Remove="Images\GameCards\DS1.png" />
+    <None Remove="Images\GameCards\DS2.png" />
+    <None Remove="Images\GameCards\DS3.png" />
+    <None Remove="Images\GameCards\Glare.png" />
+    <None Remove="Images\GameCards\GlareLong.png" />
+    <None Remove="Images\GameCards\Metro2033.png" />
+    <None Remove="Images\GameCards\MetroExodus.png" />
+    <None Remove="Images\GameCards\MetroLastLight.png" />
+    <None Remove="Images\GameCards\Witcher.png" />
+    <None Remove="Images\GameCards\Witcher2.png" />
+    <None Remove="Images\GameCards\Witcher3.png" />
+    <None Remove="Images\gamepad.gif" />
+    <None Remove="Images\gamepad.png" />
+    <None Remove="Images\Icons\search.png" />
+    <None Remove="Images\loginBox1.png" />
+    <None Remove="Images\loginBox2.png" />
+    <None Remove="Images\minimizeButton.png" />
+    <None Remove="Images\Witcher.png" />
+    <None Remove="Images\Witcher2.png" />
+    <None Remove="Images\Witcher3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Password Dots Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\quadfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\winComProm.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\zx-spectrum.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Avatars\DiVa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Avatars\Girl1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Avatars\Girl2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Avatars\HendryRoesly.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Avatars\NierAutomata.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\balanceBox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\closeButton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\coin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\editButton1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\editButton2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\DS2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\DS1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\DS3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\Glare.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\GlareLong.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\Metro2033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\MetroExodus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\MetroLastLight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\Witcher.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\Witcher2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GameCards\Witcher3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\gamepad.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Icons\search.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\loginBox1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\loginBox2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\minimizeButton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameCardCustomControl\GameCardCustomControl.csproj" />
+    <ProjectReference Include="..\GameCardShopCustomControl\GameCardShopCustomControl.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ViewModels\ProfileViewModel.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Styles\ProfileStyles.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

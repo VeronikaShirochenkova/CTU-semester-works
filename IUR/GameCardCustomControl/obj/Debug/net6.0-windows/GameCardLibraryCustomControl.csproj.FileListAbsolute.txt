@@ -1,0 +1,17 @@
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\bin\Debug\net6.0-windows\GameCardLibraryCustomControl.deps.json
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\bin\Debug\net6.0-windows\GameCardLibraryCustomControl.dll
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\bin\Debug\net6.0-windows\GameCardLibraryCustomControl.pdb
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl.csproj.AssemblyReference.cache
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl_MarkupCompile.cache
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl_MarkupCompile.lref
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\Themes\Generic.baml
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl.g.resources
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl.GeneratedMSBuildEditorConfig.editorconfig
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl.AssemblyInfoInputs.cache
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl.AssemblyInfo.cs
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl.csproj.CoreCompileInputs.cache
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl.dll
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\refint\GameCardLibraryCustomControl.dll
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\GameCardLibraryCustomControl.pdb
+D:\IUR\SEMESTER_WORK\GameCardCustomControl\obj\Debug\net6.0-windows\ref\GameCardLibraryCustomControl.dll

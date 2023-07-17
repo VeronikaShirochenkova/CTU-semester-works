@@ -1,0 +1,183 @@
+﻿<UserControl x:Class="GameLauncher.Views.GamePageWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameLauncher.Views"
+             mc:Ignorable="d"
+             Height="600" Width="800"
+             FontFamily="/Fonts/winComProm.ttf #Windows Command Prompt"
+             >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/ProfileStyles.xaml"/>
+                <ResourceDictionary Source="/Styles/LoginStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <!--BACKGROUND-->
+        <Border Background="#e6ecff"/>
+        <Border Background="#1f2229" 
+                Margin="0,0,0,520"/>
+
+        <!--GAME INFO LABELS-->
+        <Label x:Name="gameNameLabel" 
+               Content="{Binding GameName}"
+               VerticalContentAlignment="Center"
+               FontSize="42"
+               Margin="340,100,0,0"
+               HorizontalAlignment="Left"     
+               VerticalAlignment="Top" Height="60" Width="387"
+               />
+        <Label x:Name="gameInfoLabel1" 
+               Content="Release date:"
+               VerticalContentAlignment="Center" 
+               FontSize="24"
+               Margin="340,160,312,400"
+               />
+        <Label x:Name="gameInfoLabel2" 
+               Content="Genre:"
+               VerticalContentAlignment="Center" 
+               FontSize="24"
+               Margin="340,200,312,360"
+               />
+        <Label x:Name="gameInfoLabel3" 
+               Content="Developer:"
+               VerticalContentAlignment="Center" 
+               FontSize="24"
+               Margin="340,240,312,320"
+               />
+        <Label x:Name="gameInfoLabel4" 
+               Content="Publisher:"
+               VerticalContentAlignment="Center" 
+               FontSize="24"
+               Margin="340,280,312,280"
+               />
+        <Image Name="coinImgPrice" 
+               Height="40"
+               Width="30"
+               Margin="19,540,751,20"
+               Source="/Images/coin.png"
+               />
+
+
+        <!--GAME INFO DATA-->
+        <Image x:Name="gamePoster" 
+               Height="396"
+               Width="297"
+               Margin="20,100,483,109"
+               Source="{Binding GameImage}"
+               />
+        <Label x:Name="dateLabel" 
+               Content="{Binding ReleaseDate}"
+               VerticalContentAlignment="Center"
+               FontSize="24"
+               Height="40"
+               Margin="488,160,20,400"
+               />
+        <Label x:Name="genreLabel" 
+               Content="{Binding Genre}"
+               VerticalContentAlignment="Center"
+               FontSize="24"
+               Height="40"
+               Margin="488,200,20,360"
+               />
+        <Label x:Name="devLabel" 
+               Content="{Binding Developer}"
+               VerticalContentAlignment="Center"
+               FontSize="24"
+               Height="40"
+               Margin="488,240,20,320"
+               />
+        <Label x:Name="pubLabel" 
+               Content="{Binding Publisher}"
+               VerticalContentAlignment="Center"
+               FontSize="24"
+               Height="40"
+               Margin="488,280,20,280"
+               />
+        <TextBox x:Name="gameDescLabel" 
+                 Text="{Binding Description}"
+                 TextWrapping="Wrap"
+                 IsEnabled="False"
+                 Height="160"
+                 Width="435"
+                 Style="{StaticResource descriptionBoxStyle}"
+                 Foreground="Black"
+                 FontSize="20"
+                 Background="Transparent"
+                 BorderThickness="0"
+                 Margin="340,339,25,101"
+               />
+        <Label Name="Price" 
+               Content="{Binding Price}"
+               VerticalContentAlignment="Center"
+               FontSize="30"
+               Height="40"
+               Margin="53,540,640,20"
+               />
+
+        <!--USER INFO-->
+        <TextBox x:Name="balanceBox"
+                 IsEnabled="False"
+                 Text="{Binding Balance, UpdateSourceTrigger=PropertyChanged}"
+                 Style="{StaticResource balanceBoxStyle}"
+                 Height="40"
+                 Width="46"
+                 Margin="614,30,140,530" 
+                 />
+        <Image Name="coinImg" 
+               Height="40"
+               Width="30"
+               Margin="581,30,0,0"
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top"
+               Source="/Images/coin.png"
+               />
+
+        <!--BUTTONS-->
+        <Button x:Name="eshopButton" 
+                Content="Back" 
+                Command="{Binding GameToShop}"
+                Style="{StaticResource buttonStyle}"
+                Margin="680,540,20,20"
+                />
+        <Button x:Name="buyButton" 
+                Content="Buy" 
+                Command="{Binding BuyGameCommand}"
+                Style="{StaticResource buttonStyle}"
+                Margin="219,540,481,20"
+                />
+
+        <!--CLOSE AND MINIMIZE BUTTON-->
+        <Button x:Name="closeButton"
+                Background="Transparent"
+                BorderThickness="0"
+                Command="{Binding CloseCommand}" 
+                Height="20"
+                Width="20"
+                Margin="780,0,0,580" 
+                >
+            <Rectangle Fill="#FA6161"
+                       Height="20"
+                       Width="20"
+                       Cursor="Hand"/>
+        </Button>
+        <Button x:Name="minimizeButton"
+                Background="Transparent"
+                BorderThickness="0"
+                Command="{Binding MinimizeCommand}" 
+                Height="20"
+                Width="20"
+                Margin="760,0,20,580" 
+                >
+            <Rectangle Fill="#CFE1FA"
+                       Height="20"
+                       Width="20"
+                       Cursor="Hand"/>
+        </Button>
+
+    </Grid>
+</UserControl>

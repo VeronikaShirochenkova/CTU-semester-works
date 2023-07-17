@@ -1,0 +1,141 @@
+﻿<ResourceDictionary
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ >
+    <!--LOGIN BOXES SOURCES-->
+    <ImageBrush x:Key="img1" ImageSource="/Images/editButton1.png" Stretch="None"/>
+    <ImageBrush x:Key="img2" ImageSource="/Images/editButton2.png" Stretch="None"/>
+    <ImageBrush x:Key="balance" ImageSource="/Images/balanceBox.png" Stretch="None"/>
+    <ImageBrush x:Key="coin" ImageSource="/Images/coin.png" Stretch="None"/>
+    
+
+    <!--NICKNAME BOX STYLE-->
+    <Style x:Key="nicknameBoxStyle" TargetType="TextBox">
+        <Setter Property="Height" Value="60"/>
+        <Setter Property="Width" Value="359"/>
+        <Setter Property="Foreground" Value="#e6ecff"/>
+        <Setter Property="BorderThickness" Value="0"/>
+
+        <Setter Property="FontFamily" Value="/Fonts/winComProm.ttf #Windows Command Prompt"/>
+        <Setter Property="FontSize" Value="46"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" Background="Transparent" SnapsToDevicePixels="True">
+                        <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Opacity" TargetName="border" Value="1"/>
+                            <Setter Property="BorderThickness" TargetName="border" Value="0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="true">
+                            <Setter Property="Opacity" TargetName="border" Value="0.5"/>
+                            <Setter Property="BorderThickness" TargetName="border" Value="4"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--DESCRIPTION BOX STYLE-->
+    <Style x:Key="descriptionBoxStyle" TargetType="TextBox">
+        <Setter Property="Height" Value="79"/>
+        <Setter Property="Width" Value="359"/>
+        <Setter Property="Foreground" Value="#e6ecff"/>
+        <Setter Property="BorderThickness" Value="0"/>
+
+        <Setter Property="FontFamily" Value="/Fonts/winComProm.ttf #Windows Command Prompt"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" Background="Transparent" SnapsToDevicePixels="True">
+                        <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Opacity" TargetName="border" Value="1"/>
+                            <Setter Property="BorderThickness" TargetName="border" Value="0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="true">
+                            <Setter Property="Opacity" TargetName="border" Value="0.5"/>
+                            <Setter Property="BorderThickness" TargetName="border" Value="4"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--EDIT BUTTON STYLE-->
+    <Style x:Key="buttonStyle" TargetType="Button">
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderThickness" Value="0"/>
+
+        <Setter Property="FontFamily" Value="/Fonts/winComProm.ttf #Windows Command Prompt"/>
+        <Setter Property="FontSize" Value="20"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" Background="{StaticResource img1}" BorderThickness="0" SnapsToDevicePixels="True">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="False">
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource img1}"/>
+                            
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource img2}"/>
+                            <Setter Property="Opacity" TargetName="border" Value="0.5"/>
+                        </Trigger>
+                        
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource img2}"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--BALANCE BOX STYLE-->
+    <Style x:Key="balanceBoxStyle" TargetType="TextBox">
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Foreground" Value="#e6ecff"/>
+        <Setter Property="BorderThickness" Value="0"/>
+
+        <Setter Property="FontFamily" Value="/Fonts/winComProm.ttf #Windows Command Prompt"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" Background="Transparent" BorderThickness="0" SnapsToDevicePixels="True">
+                        <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
+

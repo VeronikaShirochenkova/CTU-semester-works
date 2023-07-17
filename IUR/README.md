@@ -1,3 +1,6 @@
+Please watch the video to see the application
+
+
 Try something from the list to log in:
 
 LOGIN: shirover    PASSWORD: 12345
